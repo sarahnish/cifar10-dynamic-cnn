@@ -45,18 +45,14 @@ The improved model achieved **91.08% test accuracy**, compared with **83.57%** f
 
 ## Architecture
 
-```text
-Input Image
-     │
-     ▼
-Dynamic Multi-Branch Block
-     │
-     ├── Conv Branch 1 ─┐
-     ├── Conv Branch 2 ─┼──► Weighted Combination
-     └── Conv Branch N ─┘
-              ▲
-              │
-      Input-dependent
-        coefficients
-              │
-     Channel Averaging
+## Architecture
+
+<p align="center">
+  <img src="assets/architecture-diagram.png" alt="Improved dynamically weighted multi-branch CNN block" width="900"/>
+</p>
+
+Each intermediate block sends the same input feature map through multiple convolutional branches. Global average pooling summarises the input channels, and a linear fully connected layer generates one input-dependent coefficient for each branch. Each branch output is multiplied by its corresponding coefficient before the weighted outputs are summed.
+
+The improved network stacks four of these blocks with increasing channel capacity:
+
+**3 → 64 → 128 → 256 → 512 channels** with max pooling reducing spatial resolution from **32×32 → 16×16 → 8×8 → 4×4**.
