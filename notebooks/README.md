@@ -4,7 +4,7 @@
 
 ## Main Notebook
 
-[`cifar10-dynamic-cnn.ipynb`](cifar10-dynamic-cnn.ipynb)
+(CIFAR10_CNN.ipynb)
 
 This notebook contains the complete CIFAR-10 modelling and evaluation workflow for the dynamically weighted multi-branch CNN.
 
