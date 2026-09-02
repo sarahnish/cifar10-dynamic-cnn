@@ -187,20 +187,4 @@ This project gave me practical experience with:
 - evaluating performance at class level
 - recognising limitations in experimental design
 
----
-
-## Repository Structure
-
-```text
-cifar10-dynamic-cnn/
-├── README.md
-├── requirements.txt
-├── notebooks/
-│   ├── README.md
-│   ├── CIFAR10_CNN.ipynb
-│   └── architecture diagram.png
-└── results/
-    ├── README.md
-    └── training-curves.png
-```
 
