@@ -1,0 +1,139 @@
+<svg viewBox="0 0 720 420" xmlns="http://www.w3.org/2000/svg" style="font-family:var(--kimi-font-sans, sans-serif);width:100%;max-width:720px;">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="var(--kimi-color-text-primary, #111)"/>
+    </marker>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="var(--kimi-color-text-tertiary, #888)"/>
+    </marker>
+  </defs>
+
+  <!-- Input block -->
+  <rect x="30" y="160" width="70" height="70" rx="6" fill="var(--kimi-color-surface-muted, #f5f5f5)" stroke="var(--kimi-color-border, #ddd)" stroke-width="1.5"/>
+  <rect x="38" y="168" width="70" height="70" rx="6" fill="var(--kimi-color-surface-muted, #f5f5f5)" stroke="var(--kimi-color-border, #ddd)" stroke-width="1.5"/>
+  <rect x="46" y="176" width="70" height="70" rx="6" fill="var(--kimi-color-surface, #fff)" stroke="var(--kimi-color-text-primary, #111)" stroke-width="1.5"/>
+  <text x="81" y="218" text-anchor="middle" font-size="12" fill="var(--kimi-color-text-secondary, #555)">input</text>
+  <text x="81" y="232" text-anchor="middle" font-size="10" fill="var(--kimi-color-text-tertiary, #888)">C×H×W</text>
+
+  <!-- Arrow to branches -->
+  <line x1="116" y1="211" x2="150" y2="211" stroke="var(--kimi-color-text-primary, #111)" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Branch 1 -->
+  <rect x="160" y="80" width="90" height="40" rx="6" fill="var(--kimi-color-surface, #fff)" stroke="var(--kimi-color-text-primary, #111)" stroke-width="1.5"/>
+  <text x="205" y="105" text-anchor="middle" font-size="11" fill="var(--kimi-color-text-primary, #111)">conv 3×3</text>
+
+  <!-- Branch 2 -->
+  <rect x="160" y="140" width="90" height="40" rx="6" fill="var(--kimi-color-surface, #fff)" stroke="var(--kimi-color-text-primary, #111)" stroke-width="1.5"/>
+  <text x="205" y="165" text-anchor="middle" font-size="11" fill="var(--kimi-color-text-primary, #111)">conv 3×3</text>
+
+  <!-- Branch 3 -->
+  <rect x="160" y="200" width="90" height="40" rx="6" fill="var(--kimi-color-surface, #fff)" stroke="var(--kimi-color-text-primary, #111)" stroke-width="1.5"/>
+  <text x="205" y="225" text-anchor="middle" font-size="11" fill="var(--kimi-color-text-primary, #111)">conv 3×3</text>
+
+  <!-- Branch 4 -->
+  <rect x="160" y="260" width="90" height="40" rx="6" fill="var(--kimi-color-surface, #fff)" stroke="var(--kimi-color-text-primary, #111)" stroke-width="1.5"/>
+  <text x="205" y="285" text-anchor="middle" font-size="11" fill="var(--kimi-color-text-primary, #111)">conv 3×3</text>
+
+  <!-- Branch 5 -->
+  <rect x="160" y="320" width="90" height="40" rx="6" fill="var(--kimi-color-surface, #fff)" stroke="var(--kimi-color-text-primary, #111)" stroke-width="1.5"/>
+  <text x="205" y="345" text-anchor="middle" font-size="11" fill="var(--kimi-color-text-primary, #111)">conv 3×3</text>
+
+  <!-- Dots between branches and output -->
+  <circle cx="280" cy="100" r="3" fill="var(--kimi-color-text-primary, #111)"/>
+  <circle cx="280" cy="160" r="3" fill="var(--kimi-color-text-primary, #111)"/>
+  <circle cx="280" cy="220" r="3" fill="var(--kimi-color-text-primary, #111)"/>
+  <circle cx="280" cy="280" r="3" fill="var(--kimi-color-text-primary, #111)"/>
+  <circle cx="280" cy="340" r="3" fill="var(--kimi-color-text-primary, #111)"/>
+
+  <!-- Weight arrows (dashed, from top) -->
+  <line x1="280" y1="100" x2="320" y2="100" stroke="var(--kimi-color-text-tertiary, #888)" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#arrow-gray)"/>
+  <line x1="280" y1="160" x2="320" y2="160" stroke="var(--kimi-color-text-tertiary, #888)" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#arrow-gray)"/>
+  <line x1="280" y1="220" x2="320" y2="220" stroke="var(--kimi-color-text-tertiary, #888)" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#arrow-gray)"/>
+  <line x1="280" y1="280" x2="320" y2="280" stroke="var(--kimi-color-text-tertiary, #888)" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#arrow-gray)"/>
+  <line x1="280" y1="340" x2="320" y2="340" stroke="var(--kimi-color-text-tertiary, #888)" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#arrow-gray)"/>
+
+  <!-- Weight labels -->
+  <text x="300" y="95" text-anchor="middle" font-size="10" fill="var(--kimi-color-text-tertiary, #888)">w₁</text>
+  <text x="300" y="155" text-anchor="middle" font-size="10" fill="var(--kimi-color-text-tertiary, #888)">w₂</text>
+  <text x="300" y="215" text-anchor="middle" font-size="10" fill="var(--kimi-color-text-tertiary, #888)">w₃</text>
+  <text x="300" y="275" text-anchor="middle" font-size="10" fill="var(--kimi-color-text-tertiary, #888)">w₄</text>
+  <text x="300" y="335" text-anchor="middle" font-size="10" fill="var(--kimi-color-text-tertiary, #888)">w₅</text>
+
+  <!-- Multiply circles -->
+  <circle cx="340" cy="100" r="14" fill="var(--kimi-color-surface, #fff)" stroke="var(--kimi-color-text-primary, #111)" stroke-width="1.5"/>
+  <text x="340" y="104" text-anchor="middle" font-size="12" fill="var(--kimi-color-text-primary, #111)">×</text>
+
+  <circle cx="340" cy="160" r="14" fill="var(--kimi-color-surface, #fff)" stroke="var(--kimi-color-text-primary, #111)" stroke-width="1.5"/>
+  <text x="340" y="164" text-anchor="middle" font-size="12" fill="var(--kimi-color-text-primary, #111)">×</text>
+
+  <circle cx="340" cy="220" r="14" fill="var(--kimi-color-surface, #fff)" stroke="var(--kimi-color-text-primary, #111)" stroke-width="1.5"/>
+  <text x="340" y="224" text-anchor="middle" font-size="12" fill="var(--kimi-color-text-primary, #111)">×</text>
+
+  <circle cx="340" cy="280" r="14" fill="var(--kimi-color-surface, #fff)" stroke="var(--kimi-color-text-primary, #111)" stroke-width="1.5"/>
+  <text x="340" y="284" text-anchor="middle" font-size="12" fill="var(--kimi-color-text-primary, #111)">×</text>
+
+  <circle cx="340" cy="340" r="14" fill="var(--kimi-color-surface, #fff)" stroke="var(--kimi-color-text-primary, #111)" stroke-width="1.5"/>
+  <text x="340" y="344" text-anchor="middle" font-size="12" fill="var(--kimi-color-text-primary, #111)">×</text>
+
+  <!-- Arrows from multipliers to sum -->
+  <line x1="354" y1="100" x2="390" y2="211" stroke="var(--kimi-color-text-primary, #111)" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="354" y1="160" x2="390" y2="211" stroke="var(--kimi-color-text-primary, #111)" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="354" y1="220" x2="390" y2="211" stroke="var(--kimi-color-text-primary, #111)" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="354" y1="280" x2="390" y2="211" stroke="var(--kimi-color-text-primary, #111)" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="354" y1="340" x2="390" y2="211" stroke="var(--kimi-color-text-primary, #111)" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Sum circle -->
+  <circle cx="410" cy="211" r="18" fill="var(--kimi-color-surface, #fff)" stroke="var(--kimi-color-text-primary, #111)" stroke-width="1.5"/>
+  <text x="410" y="216" text-anchor="middle" font-size="14" fill="var(--kimi-color-text-primary, #111)">Σ</text>
+
+  <!-- Arrow to output -->
+  <line x1="428" y1="211" x2="470" y2="211" stroke="var(--kimi-color-text-primary, #111)" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Output block -->
+  <rect x="480" y="160" width="70" height="70" rx="6" fill="var(--kimi-color-surface-muted, #f5f5f5)" stroke="var(--kimi-color-border, #ddd)" stroke-width="1.5"/>
+  <rect x="488" y="168" width="70" height="70" rx="6" fill="var(--kimi-color-surface-muted, #f5f5f5)" stroke="var(--kimi-color-border, #ddd)" stroke-width="1.5"/>
+  <rect x="496" y="176" width="70" height="70" rx="6" fill="var(--kimi-color-surface, #fff)" stroke="var(--kimi-color-text-primary, #111)" stroke-width="1.5"/>
+  <text x="531" y="218" text-anchor="middle" font-size="12" fill="var(--kimi-color-text-secondary, #555)">output</text>
+
+  <!-- Squeeze path (top) -->
+  <line x1="81" y1="160" x2="81" y2="50" stroke="var(--kimi-color-text-tertiary, #888)" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#arrow-gray)"/>
+
+  <!-- Global average pooling -->
+  <rect x="36" y="20" width="90" height="30" rx="6" fill="var(--kimi-color-surface, #fff)" stroke="var(--kimi-color-text-tertiary, #888)" stroke-width="1.5"/>
+  <text x="81" y="40" text-anchor="middle" font-size="10" fill="var(--kimi-color-text-secondary, #555)">global avg pool</text>
+
+  <!-- Arrow to FC -->
+  <line x1="126" y1="35" x2="170" y2="35" stroke="var(--kimi-color-text-tertiary, #888)" stroke-width="1" marker-end="url(#arrow-gray)"/>
+
+  <!-- FC layer -->
+  <rect x="180" y="15" width="80" height="40" rx="6" fill="var(--kimi-color-surface, #fff)" stroke="var(--kimi-color-text-tertiary, #888)" stroke-width="1.5"/>
+  <text x="220" y="40" text-anchor="middle" font-size="10" fill="var(--kimi-color-text-secondary, #555)">FC (C → N)</text>
+
+  <!-- Arrow to softmax -->
+  <line x1="260" y1="35" x2="300" y2="35" stroke="var(--kimi-color-text-tertiary, #888)" stroke-width="1" marker-end="url(#arrow-gray)"/>
+
+  <!-- Softmax -->
+  <rect x="310" y="15" width="70" height="40" rx="6" fill="var(--kimi-color-surface, #fff)" stroke="var(--kimi-color-text-tertiary, #888)" stroke-width="1.5"/>
+  <text x="345" y="40" text-anchor="middle" font-size="10" fill="var(--kimi-color-text-secondary, #555)">softmax</text>
+
+  <!-- Arrow down to weights -->
+  <line x1="345" y1="55" x2="345" y2="80" stroke="var(--kimi-color-text-tertiary, #888)" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#arrow-gray)"/>
+
+  <!-- Weight generation label -->
+  <text x="355" y="70" text-anchor="start" font-size="10" fill="var(--kimi-color-text-tertiary, #888)">weights</text>
+
+  <!-- Title -->
+  <text x="360" y="395" text-anchor="middle" font-size="14" font-weight="500" fill="var(--kimi-color-text-primary, #111)">Dynamic multi-branch block</text>
+  <text x="360" y="412" text-anchor="middle" font-size="11" fill="var(--kimi-color-text-tertiary, #888)">N parallel conv branches with learned per-branch weights</text>
+
+  <!-- Legend -->
+  <rect x="580" y="20" width="130" height="90" rx="8" fill="var(--kimi-color-surface-muted, #f5f5f5)" stroke="var(--kimi-color-border, #ddd)" stroke-width="1"/>
+  <text x="590" y="38" font-size="10" font-weight="500" fill="var(--kimi-color-text-secondary, #555)">Legend</text>
+  <line x1="590" y1="50" x2="700" y2="50" stroke="var(--kimi-color-border, #ddd)" stroke-width="1"/>
+
+  <line x1="600" y1="65" x2="630" y2="65" stroke="var(--kimi-color-text-primary, #111)" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="640" y="69" font-size="10" fill="var(--kimi-color-text-tertiary, #888)">data flow</text>
+
+  <line x1="600" y1="85" x2="630" y2="85" stroke="var(--kimi-color-text-tertiary, #888)" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#arrow-gray)"/>
+  <text x="640" y="89" font-size="10" fill="var(--kimi-color-text-tertiary, #888)">weight flow</text>
+</svg>
