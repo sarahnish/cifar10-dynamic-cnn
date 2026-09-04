@@ -9,8 +9,7 @@
 <p align="center">
   <a href="notebooks/CIFAR10_CNN.ipynb">Modelling Notebook</a> •
   <a href="results/README.md">Evaluation Results</a> •
-  <a href="notebooks/architecture%20diagram.png">Architecture Diagram</a> •
-  <a href="https://github.com/sarahnish/portfolio">Project Portfolio</a>
+  <a href="notebooks/architecture%20diagram.png">Architecture Diagram</a> 
 </p>
 
 ---
